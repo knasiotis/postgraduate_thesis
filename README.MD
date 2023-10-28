@@ -12,4 +12,6 @@ Using ```-DCODE 0``` as a compilation argument in the Makefile runs the code wit
 After the successful compilation, run ```./interval -help``` for guidance about the rest of the arguments.
 
 Lastly, in order to run the sequential algorithm one must install the [Ibex Interval Library](https://github.com/ibex-team/ibex-lib) and (re)place the files from the sequential folder into the Ibex/examples one.
- 
+
+
+P.S. Don't forget to set the targeted SM architectures in the Makefile.
