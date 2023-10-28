@@ -7,7 +7,7 @@ To reproduce the code, one should train and import a Neural Network of their cho
 The above was the hardest step, the only thing left is to copy-paste and replace the files from Nvidia's 
 [CUDA Interval Samples](https://github.com/NVIDIA/cuda-samples/tree/master/Samples/2_Concepts_and_Techniques/interval) repository.
 
-Using ```-DCODE 0``` as a compilation argument in the Makefile runs the code with FP32(float) variables, otherwise it uses FP16(half) variables to store the boxes. There is no accuracy loss by using half variables, unless a very small epsilon value is given as an input.
+Using ```-DCODE 0``` as a compilation argument in the Makefile runs the code with FP32(float) variables, otherwise it uses FP16(half) variables to store the boxes. There is no accuracy loss by using half variables, unless a very very small epsilon value is given as an input.
 
 After the successful compilation, run ```./interval -help``` for guidance about the rest of the arguments.
 
