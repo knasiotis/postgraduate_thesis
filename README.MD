@@ -9,7 +9,7 @@ The above was the hardest step, the only thing left is to copy-paste and replace
 
 Using ```-DCODE 0``` as a compilation argument in the Makefile runs the code with FP32(float) variables, otherwise it uses FP16(half) variables to store the boxes. There is no accuracy loss by using half variables, unless a very small epsilon value is given as an input.
 
-Run ```./interval -help``` for guidance about the rest of the arguments.
+After the successful compilation, run ```./interval -help``` for guidance about the rest of the arguments.
 
 Lastly, in order to run the sequential algorithm one must install the [Ibex Interval Library](https://github.com/ibex-team/ibex-lib) and (re)place the files from the sequential folder into the Ibex/examples one.
  
